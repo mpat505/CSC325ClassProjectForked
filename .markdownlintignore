@@ -1,0 +1,5 @@
+# Node generated files
+node_modules
+
+# Vale generated files
+styles
