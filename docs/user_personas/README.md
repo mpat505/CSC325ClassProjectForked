@@ -1,4 +1,4 @@
-# User personas directory
+#User personas directory
 
 Welcome to the `user_personas` directory. This directory stores user personas essential for the project.
 
