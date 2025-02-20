@@ -38,13 +38,13 @@ To get a local copy up and running, follow these steps:
 1. **Install dependencies**:
 
    ```bash
-   npm install
+   # TBD
    ```
 
 1. **Run the development server**:
 
    ```bash
-   npm start
+   # TBD
    ```
 
 ## Usage
@@ -55,7 +55,29 @@ To get a local copy up and running, follow these steps:
 
 ## Contributing
 
-Contributions welcome. If you have any suggestions or improvements, please submit an issue or create a pull request.
+Contributions welcome. If you have any suggestions or improvements, please submit an issue or create a pull request. To get started, please follow the guidelines below:
+
+### Development environment
+
+To ensure a consistent development environment, this project uses a [development container](/.devcontainer/devcontainer.json). This allows contributors to develop the project in a standardized and isolated environment.
+
+1. **Setup Development Container**: Make sure you have [Docker](https://docs.docker.com/get-started/introduction/get-docker-desktop/) and [Visual Studio Code](https://code.visualstudio.com/download) installed.
+2. **Open the Repository in VS Code**: Clone the repository and open it in VS Code.
+3. **Development Container**: When you open the repository, VS Code should automatically prompt you to reopen the project in the development container. If not, you can manually select **"Reopen in Container"** from the Command Palette `Ctrl+Shift+P`.
+
+### Contributor guidance
+
+For detailed guidelines on contributing to the project, please refer to the [Contributor Guidance Documentation](./docs/contributor-guides).
+
+Project Contributor Guidance Documentation covers the following topics:
+- How to submit a Pull Request
+- Coding Standards
+- Testing and Validation
+- Issue and Feature Request Submission
+
+---
+
+Following the preceding steps ensures a smooth and productive development process. If you have any questions, please feel free to reach out.
 
 ## License
 
