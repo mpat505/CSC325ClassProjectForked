@@ -14,7 +14,11 @@ Lint the project Markdown files by running the following command in the root dir
 markdownlint -f "**/*.md"
 ```
 
-This command checks all Markdown files in the repository and reports any formatting issues based on the [CommonMark](https://commonmark.org/) specification and rules excluded in [`.markdownlint.yaml`](/.markdownlint.yaml). Ignored files and directories get identified in [`.markdownlintignore`](/.markdownlintignore)
+This command checks all Markdown files in the repository and reports any formatting issues based on the [CommonMark](https://commonmark.org/) specification and rules excluded in [`.markdownlint.yaml`](/.markdownlint.yaml). The command attempts to fix any formatting issues it can. Ignored files and directories get identified in [`.markdownlintignore`](/.markdownlintignore)
+
+### Success criteria
+
+markdownlint-cli provides an exit code of 0.
 
 ## Step 2: Check grammar and spelling
 
@@ -25,6 +29,10 @@ vale .
 ```
 
 This command checks all files in the repository and reports any grammar and spelling issues based on the rules defined in [`.vale.ini`](/.vale.ini). For more information on using Vale check the [official documentation](https://vale.sh/docs/cli).
+
+### Success criteria
+
+Vale outputs 0 for suggestions, warnings, and errors.
 
 ## Conclusion
 
