@@ -1,4 +1,3 @@
-'use client'
 import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -14,6 +13,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import ColorModeIconDropdown from '@/shared-theme/ColorModeIconDropdown';
 import Sitemark from './SitemarkIcon';
+import Stack from '@mui/material/Stack';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/X';
+
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -54,23 +58,26 @@ export default function AppAppBar() {
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', px: 0 }}>
             <Sitemark />
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" href="#features" color="info" size="small">
                 Features
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" href="#testimonials" color="info" size="small">
                 Testimonials
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" href="#highlights" color="info" size="small">
                 Highlights
               </Button>
-              <Button variant="text" color="info" size="small">
+              <Button variant="text" href="#pricing" color="info" size="small">
                 Pricing
               </Button>
-              <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
+              <Button variant="text" href="#faq" color="info" size="small" sx={{ minWidth: 0 }}>
                 FAQ
               </Button>
               <Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
                 Blog
+              </Button>
+              <Button variant="text" href="/about" color="info" size="small" sx={{ minWidth: 0 }}>
+                About
               </Button>
             </Box>
           </Box>
@@ -81,12 +88,40 @@ export default function AppAppBar() {
               alignItems: 'center',
             }}
           >
-            <Button color="primary" variant="text" size="small">
-              Sign in
-            </Button>
-            <Button color="primary" variant="contained" size="small">
-              Sign up
-            </Button>
+            <Stack
+              direction="row"
+              spacing={1}
+              useFlexGap
+              sx={{ justifyContent: 'left', color: 'text.secondary' }}
+            >
+              <IconButton
+                color="inherit"
+                size="small"
+                href="https://github.com/"
+                aria-label="GitHub"
+                sx={{ alignSelf: 'center' }}
+              >
+                <GitHubIcon />
+              </IconButton>
+              <IconButton
+                color="inherit"
+                size="small"
+                href="https://x.com/"
+                aria-label="X"
+                sx={{ alignSelf: 'center' }}
+              >
+                <TwitterIcon />
+              </IconButton>
+              <IconButton
+                color="inherit"
+                size="small"
+                href="https://www.linkedin.com/"
+                aria-label="LinkedIn"
+                sx={{ alignSelf: 'center' }}
+              >
+                <LinkedInIcon />
+              </IconButton>
+            </Stack>
             <ColorModeIconDropdown />
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 1 }}>
