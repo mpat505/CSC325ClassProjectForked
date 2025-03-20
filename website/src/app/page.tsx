@@ -10,7 +10,6 @@ import Testimonials from '@/components/Testimonials';
 import Highlights from '@/components/Highlights';
 import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
-import Footer from '@/components/Footer';
 import type {} from '@mui/material/themeCssVarsAugmentation';
 
 export default function Home() {
@@ -37,8 +36,6 @@ export default function Home() {
           <Pricing />
           <Divider />
           <FAQ />
-          <Divider />
-          <Footer />
         </div>
       </Box>
     </Container>
