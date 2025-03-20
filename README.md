@@ -17,7 +17,12 @@ This project creates a comprehensive and visually appealing personal website por
 
 ## Tech stack
 
-- **TBD**: No tech stack defined.
+This static website portfolio uses a modern and efficient stack:
+
+- **Next.js**: powers the site with static site generation and routing, enabling a fast and Search Engine Optimization (SEO) friendly web experience.
+- **Material UI**: enhances the interface with customizable React-based components and themes, making it visually appealing and intuitive.
+- **Extended Markdown (MDX)**: Leveraged for integrating JavaScript XML (JSX) in Markdown, providing the flexibility to write content and use React components seamlessly within the portfolio pages.
+
 
 ## Getting started
 
