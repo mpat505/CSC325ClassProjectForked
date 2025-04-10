@@ -42,7 +42,6 @@ export default function Hero() {
       sx={(theme) => ({
         width: '100%',
         backgroundRepeat: 'no-repeat',
-
         backgroundImage:
           'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 90%), transparent)',
         ...theme.applyStyles('dark', {
@@ -65,6 +64,7 @@ export default function Hero() {
           useFlexGap
           sx={{ alignItems: 'center', width: { xs: '100%', sm: '70%' } }}
         >
+          {/* Main Heading */}
           <Typography
             variant="h1"
             sx={{
@@ -89,10 +89,16 @@ export default function Hero() {
               great hire
             </Typography>
           </Typography>
+
+          {/* Subheading (now h2) */}
           <Typography
+            variant="h2"
+            component="h2"
             sx={{
               textAlign: 'center',
               color: 'text.secondary',
+              fontSize: '1.25rem',
+              fontWeight: 400,
               width: { sm: '100%', md: '80%' },
             }}
           >
@@ -101,6 +107,8 @@ export default function Hero() {
             skills, automation, and a commitment to delivering results. Let’s work together to turn your 
             challenges into opportunities, and ensure your team thrives.
           </Typography>
+
+          {/* Input + CTA Button */}
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
             spacing={1}
@@ -134,6 +142,8 @@ export default function Hero() {
               Go now
             </Button>
           </Stack>
+
+          {/* Terms */}
           <Typography
             variant="caption"
             color="text.secondary"
@@ -145,6 +155,19 @@ export default function Hero() {
             </Link>
             .
           </Typography>
+
+          {/* Hero image */}
+          <Box
+            component="img"
+            src="/hero.jpg"
+            alt="Team working together"
+            sx={{
+              width: '100%',
+              maxWidth: 600,
+              borderRadius: 2,
+              mt: 4,
+            }}
+          />
         </Stack>
       </Container>
     </Box>
