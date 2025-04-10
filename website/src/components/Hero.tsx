@@ -159,7 +159,7 @@ export default function Hero() {
           {/* Hero image */}
           <Box
             component="img"
-            src="/hero.jpg"
+            src="/images/z05Sr.png"
             alt="Team working together"
             sx={{
               width: '100%',
