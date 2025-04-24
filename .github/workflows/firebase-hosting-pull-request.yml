@@ -30,7 +30,8 @@ jobs:
         uses: errata-ai/vale-action@reviewdog
         with:
           files: 'website/**/*.md'
-          vale_flags: '--config=website/.vale.ini'
+          vale_flags: '--config=.vale.ini'
+
 
       - name: Build static site
         run: npm run build
