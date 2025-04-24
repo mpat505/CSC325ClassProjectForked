@@ -3,13 +3,13 @@
   "version": "5.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "post-update": "echo \"codesandbox preview only, need an update\" && pnpm update --latest",
-    "test": "jest"
-  },
+  "dev": "next dev",
+  "build": "next build && next export",
+  "start": "next start",
+  "lint": "next lint",
+  "post-update": "echo \"codesandbox preview only, need an update\" && pnpm update --latest",
+  "test": "jest"
+},
   "dependencies": {
     "@emotion/cache": "latest",
     "@emotion/react": "latest",

@@ -13,12 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Dependencies
-        working-directory: ./website
+      - name: Install dependencies
         run: npm install
 
-      - name: Build
-        working-directory: ./website
+      - name: Build and export static site
         run: npm run build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
@@ -27,4 +25,3 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CSC325_NEXT_SITE }}
           channelId: live
           projectId: csc325-next-site
-          entryPoint: ./website
